@@ -1,0 +1,41 @@
+<h2>ADD Document</h2>
+<div class="container">
+    <form action="" #documentForm='ngForm' (ngSubmit)='Document()'>
+        <table class="">
+
+            <tr>
+                <td>Full Name</td>
+                <td> <input type="text" [(ngModel)]='document.fullName' placeholder="fullName"
+                        [ngModelOptions]="{standalone: true}"> <br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Description
+                </td>
+                <td>
+                    <input type="text" [(ngModel)]='document.description' placeholder="description"
+                        [ngModelOptions]="{standalone: true}">
+                </td>
+            </tr>
+            <tr>
+                <td>date</td>
+                <td> <input type="date" name="" id="" [(ngModel)]='document.date' placeholder="date"
+                        [ngModelOptions]="{standalone: true}"> </td>
+            </tr>
+            <tr>
+                <td>doc</td>
+                <td> <input type="text" [(ngModel)]='document.doc' placeholder="documentName"
+                        [ngModelOptions]="{standalone: true}"> </td>
+            </tr>
+
+            <tr>
+                <td colspan="2"> <button >{{title}} DOC</button>
+                </td>
+            </tr>
+        </table>
+
+    </form>
+    <img src="assets/images/font.jpg" alt="">
+    <!-- <button routerLink=''>HOME</button> -->
+</div>

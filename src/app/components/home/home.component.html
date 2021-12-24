@@ -1,0 +1,51 @@
+<div class="container" id="flexx">
+
+  <h2>Document</h2>
+  <p>
+    <button class="doc" routerLink='addDoc'> + add Document</button>
+
+  </p>
+
+</div>
+<div class="container" id="flex2">
+  <div>
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab"
+          aria-controls="home" aria-selected="true"></button>
+      </li>
+  
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+        <table class="table table-striped">
+          <tr>
+            <td>FullName</td>
+            <td>Description</td>
+            <td>Date</td>
+            <td>Doc</td>
+          </tr>
+          <tr *ngFor='let d of documents'>
+            <td>{{d.fullName}}</td>
+            <td>{{d.description}}</td>
+            <td>{{d.date}}</td>
+            <td>{{d.doc}}</td>
+            <td>
+              <button type="button" class="btn btn-outline-success" (click)="displayDocument(d._id)">Display </button>
+              <button class="btn btn-outline-info" (click)="editDocument(d._id)"> edit </button>
+              <button class="btn btn-outline-danger" (click)="deleteDocument(d._id)"> Delete </button>
+            </td>
+  
+          </tr>
+        </table>
+      </div>
+  
+    </div>
+  </div>
+  <div>
+    <img src="assets/images/font.jpg" alt="">
+
+  </div>
+ 
+</div>
+

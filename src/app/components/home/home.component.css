@@ -1,0 +1,28 @@
+.doc{
+    background-color: rgb(100, 189, 189);
+    color: white;
+    margin-bottom: 10%;
+}
+#flexx{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 3%;
+}
+#flexx button{
+    margin-left: 550%;
+    padding-left: 7%;
+    padding-right: 7%;
+    width: 150%;
+    border: 1px solid rgb(100, 189, 189);
+}
+h2{
+    color: rgb(161, 95, 95);
+}
+#flex2{
+    display: flex;
+    flex-wrap: wrap;
+}
+#flex2 img{
+    margin-left: 100%;
+    width: 120%;
+}

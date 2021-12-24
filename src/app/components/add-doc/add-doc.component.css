@@ -1,0 +1,21 @@
+button{
+    text-align: center;
+    background-color: cadetblue;
+    margin-left: 10%;
+}
+div{
+    display: flex;
+    flex-wrap: wrap;
+}
+form{
+    margin-top: 5%;
+    margin-right: 40%;
+    font-size: 150%;
+}
+h2{
+    text-align: center;
+    color: rgb(197, 129, 104);
+}
+img{
+    width: 20%;
+}
